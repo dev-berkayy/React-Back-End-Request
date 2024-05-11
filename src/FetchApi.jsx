@@ -13,7 +13,7 @@ function FetchApi() {
     const [alertPassword, setAlertPassword] = useState(false);
 
     useEffect(() => {
-        const fetchData = async () => { 
+        const fetchData = async () => {
             try {
                 const response = await fetch("http://localhost:3000/posts");
                 const json = await response.json();
